@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "61598223505",
+    "firebase_url": "https://onlinemusicplayerjava.firebaseio.com",
+    "project_id": "onlinemusicplayerjava",
+    "storage_bucket": "onlinemusicplayerjava.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61598223505:android:f75a9d76504b4deac80330",
+        "android_client_info": {
+          "package_name": "com.fmohammadi.onlinemusicplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61598223505-iagujl2t8m2met45fr9egdic85e6oh3b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2kb2ydMjQLsQ9ALEI8UfKof1FUt4uPNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61598223505-iagujl2t8m2met45fr9egdic85e6oh3b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
