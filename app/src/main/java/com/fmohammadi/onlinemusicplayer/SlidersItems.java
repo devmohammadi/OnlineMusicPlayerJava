@@ -1,13 +1,14 @@
 package com.fmohammadi.onlinemusicplayer;
 
 public class SlidersItems {
-    public int image;
+    // change to string because fetch image url
+    public String imageurl;
 
-    public SlidersItems(int image) {
-        this.image = image;
+    public SlidersItems(String image) {
+        this.imageurl = image;
     }
 
-    public int getImage() {
-        return image;
+    public String getImageurl() {
+        return imageurl;
     }
 }

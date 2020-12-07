@@ -1,5 +1,6 @@
 package com.fmohammadi.onlinemusicplayer;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,11 +9,14 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.List;
 
 public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.SliderViewHolder> {
 
     private List<SlidersItems> slidersItems;
+    Context mContext;
 
     public SliderAdapter (List<SlidersItems> slidersItems){
         this.slidersItems = slidersItems;
@@ -21,6 +25,7 @@ public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.SliderView
     @NonNull
     @Override
     public SliderViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        mContext = parent.getContext();
         return new SliderViewHolder((LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.slider_items , parent , false)));
     }
@@ -45,7 +50,10 @@ public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.SliderView
         }
 
         void setImageView (SlidersItems slidersItems){
-            imageView.setImageResource(slidersItems.getImage());
+            Glide.with(mContext)
+                    .load(slidersItems.getImageurl())
+                    .override(300 , 300)
+                    .into(imageView);
         }
     }
 }
